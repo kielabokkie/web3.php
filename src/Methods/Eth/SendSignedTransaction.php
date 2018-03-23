@@ -12,9 +12,9 @@
 namespace Web3\Methods\Eth;
 
 use InvalidArgumentException;
-use Web3\Formatters\HexFormatter;
 use Web3\Methods\EthMethod;
-use Web3\Validators\StringValidator;
+use Web3\Validators\HexValidator;
+use Web3\Formatters\HexFormatter;
 
 class SendSignedTransaction extends EthMethod
 {
@@ -24,7 +24,7 @@ class SendSignedTransaction extends EthMethod
      * @var array
      */
     protected $validators = [
-        StringValidator::class
+        // HexValidator::class
     ];
 
     /**
